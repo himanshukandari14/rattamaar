@@ -1,0 +1,105 @@
+@font-face {
+            font-family: matterlight;
+            src: url(./fonts/matter-light.ttf);
+        }
+
+        @font-face {
+            font-family: robotoflex;
+            src: url(./fonts/roboto-flex-variable-full.ttf);
+        }
+
+        @font-face {
+            font-family: matterregular;
+            src: url(./fonts/matter-regular.ttf);
+        }
+          @font-face {
+            font-family: alien;
+            src: url(./fonts/KFOmCnqEu92Fr1Mu4mxK.ttf);
+        }
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: matterregular;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+          /* CSS styles for scrollbar */
+        /* width */
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        
+        
+        .group:hover~.group-item{
+            opacity: 100;
+            color:#1B8A7B;
+        }
+
+        #vicks{
+           border-radius:  42% 58% 61% 39% / 48% 42% 58% 52% ;
+        }
+        #vicks2{
+            border-radius: 30% 70% 65% 35% / 30% 30% 70% 70% ;
+        }
+        /* menubar animation */
+       #menubar {
+    animation-name: slide;
+    animation-duration: 0.9s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    transform-origin: center; /* Set the transform origin to the top right */
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(100%);
+       
+    }
+    to {
+         transform: translateX(0%);
+       
+       
+    }
+}
+
+#downloadbox{
+    background-color: #FBAB7E;
+background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+
+
+}
+#downloadnavbar{
+ background-color: rgb(28, 28, 28);
+}
+#bbagrid{
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+#verypage3bca{
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}

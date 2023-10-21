@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rattamaar | PYQ & Notes</title>
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- gsap -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <!-- wrapper -->
+   
+  <!-- page1 bba -->
+    <section id="verypage1" class="h-[100vh] w-[100vw] relative block "> 
+        <div id="menubar" class="bg-[#ffc04b] h-[100vh] w-[80vw] absolute z-50 right-0 hidden ">
+            <div id="closebtn" class=" flex justify-end">
+                <img src="./images/icons8-close-50.png" alt="">
+            </div>
+            <ul class="flex flex-col gap-y-6 text-[45px] font-[600] items-start pl-7 text-white drop-shadow-2xl ">
+                <li class="font-[robotoflex] flex justify-center items-center gap-x-4"><a href="#" class="flex gap-x-4">Home</a>
+                <img src="./images/icons8-home-48.png" alt="">
+            </li>
+                <li class="font-[robotoflex] flex justify-center items-center gap-x-4"><a href="#bcabtn">PYQ</a>
+                <img src="./images/icons8-papers-48.png" alt=""></li>
+                 <li class="font-[robotoflex] flex justify-center items-center gap-x-4"><a href="#vicks2">objective</a>
+                <img src="./images/icons8-objective-48.png" alt=""></li>
+                  <li class="font-[robotoflex] flex justify-center items-center gap-x-1 text-[38px]"><a href="#contactme">Contact us</a>
+                <img src="./images/icons8-telephone-48.png" alt=""></li>
+                   
+                
+            </ul>
+        </div>
+    <!-- nav start -->
+    <nav id="nav" class="h-[80px] flex justify-between items-center px-[5%] md:px-[5%] relative ">
+
+        <!-- logo -->
+        <div id="logo" class="text-[2rem] font-[robotoflex]  font-semibold ">
+            <span class="text-[#ffc04b]">Ratta</span><span>-maar</span>
+        </div>
+
+        <!-- navigators -->
+        <div class="font-[600] text-[19px] flex gap-x-8 navlist">
+            <a href="#home">
+                <h1 class="group hidden md:block group">Home</h1>
+                  <div class="bg-[#1B8A7B] h-[5px] rounded-3xl opacity-0 transition-all 0.5s group-item"></div>
+                
+            </a>
+            <a href="#main" class="">
+                <h1 class=" hidden md:block group">PYQ</h1>
+                <div class="bg-[#1B8A7B] h-[5px] rounded-3xl opacity-0 transition-all 0.5s group-item"></div>
+            </a>
+           <a href="#vicks2">
+             <h1 class="group hidden md:block group">Objective</h1>
+             <div class="bg-[#1B8A7B] h-[5px] rounded-3xl opacity-0 transition-all 0.5s group-item"></div>
+           </a>
+            <a href="#contactme">
+                <h1 class="group hidden md:block group">Contact Us</h1>
+                <div class="bg-[#1B8A7B] h-[5px] rounded-3xl opacity-0 transition-all 0.5s group-item"></div>
+            </a>
+        </div>
+
+        <!-- menu for mobile -->
+        <div id="menubtn" class="md:hidden block"> <img src="./images/icons8-menu-35.png" alt=""></div>
+       
+        
+    </nav>
+    <!-- nav end -->
+   
+    <!-- hero section -->
+    <div id="herosection" class=" min-h-[calc(100vh-180px)] w-full flex flex-col md:flex md:flex-row relative ">
+       <!-- left  -->
+       <div class=" h-[50%] w-full md:h-full md:w-[50%] flex flex-col px-[5%] py-[5%]">
+        <div class="">
+            <h1 class="text-[35px] md:text-[50px] text-[#F4A643] ">New Platform</h1>
+            <h1 class="text-[35px] md:text-[70px] font-[robotoflex] font-[700]">One Stop Solution</h1>
+            <h1 class="text-[35px] md:text-[70px]  font-[robotoflex] font-[700] ">For <span class="text-[#F4A643]">UCE/IPU </span>Exams</h1>
+            <h1 class="text-[gray] text-[19px]">Download PYQ for GGSIPU university exams <span class="text-[#F4A643] font-[800] italic">FREE</span></h1>
+            <h1 class="text-[gray] text-[19px]">developed by Himanshu kandari</h1>
+
+        </div> <br><br>
+        <!-- button -->
+     <a href="#explore">
+    <button type="submit" class="bg-[#187D6F] h-[70px] w-[180px] text-white text-[22px] rounded-[150px] hover:bg-[#0e554b] md:block hidden">
+        Explore Now
+    </button>
+     </a>
+       </div>
+
+       <!-- right  -->
+       <div class=" h-[50%] w-full md:h-full md:w-[50%] flex justify-center py-[5%]">
+        <div>
+           <div id="vicks" class="md:h-[400px] md:w-[400px] h-[300px] w-[300px] bg-[#187D6F] relative object-cover overflow-hidden"><!-- vicks -->
+            <img src="./images/devreal.png" alt=""  loading="lazy">
+           </div>
+        </div>
+       </div>
+    </div>
+    <!-- hero section end -->
+
+    <!-- objective -->
+    <div id="objective" class=" min-h-[80vh] w-full flex flex-col md:flex md:flex-row">
+        <!-- left -->
+        <div id="ob1" class="md:h-full md:w-[55%] h-[50%] w-full  flex flex-col px-[6%]">
+            <h1 class="md:text-[140px] text-[60px] font-[800]">Objective</h1>
+            <img src="./images/5437683.jpg" height="600" width="600" loading="lazy">
+        </div>
+        <!-- right -->
+        <div class="md:h-[100%] md:w-[45%] h-[50%] w-full flex justify-center md:px-[6%] px-0 py-[10%]">
+           <div id="vicks2" class="relative bg-[#FEE490] h-[300px] w-[550px] md:h-[580px] md:w-[1050px] flex justify-center items-center">
+             <p class="md:text-[28px] w-[80%]">the sole objective to make this webssite is the problem faced by students of UCE college at the time of unversity exams.
+                here i am providing Previous year question papers for bustsing out my mates stress of exam
+                <br><br>
+                enjoy this service free of cost
+            </p>
+           </div>
+        </div>
+    </div>
+    <!-- courses -->
+   
+    <div id="main" class="w-[100vw] min-h-[80vh] mainsec ">
+        <div class=" w-full h-[180px] flex  justify-center items-center overflow-hidden">
+            <div class="font-bold text-[black] text-[70px] md:text-[120px] pt-4 pl-4">Courses</div>
+           <a id="explore"></a>
+        </div>
+        <!-- box -->
+        <div class=" min-h-[calc(80vh-180px)] w-full md:flex md:flex-row flex flex-col md:gap-0 gap-4">
+            <!-- left -->
+            <div id="bbablock" class=" h-[50%] w-full md:h-full md:w-[50%] flex flex-col  justify-around items-center">
+                <a href="">
+                    <img class="h-[400px] w-[400px]" src="./images/5024147.jpg" loading="lazy" >
+                </a>
+                <h1 class="text-[50px] font-[800]">BBA</h1>
+                <a href="">
+                     <button type="submit" id="bbabtn" class="bg-[#187D6F] h-[70px] w-[180px] text-white text-[22px] rounded-[150px]  0.2 hover:bg-[#0e554b]">Download PYQ</button>
+                </a>
+            </div>
+            <!-- right -->
+             <div id="" class="h-[50%] w-full md:h-full md:w-[50%] flex flex-col justify-around items-center">
+                 <a href="">
+                    <img class="md:h-[400px] md:w-[500px] h-[350px] w-[650px]" src="./images/19362653.jpg" loading="lazy" >
+                </a>
+                 <h1 class="text-[50px] font-[800]">BCA</h1>
+                 <a href="" class="">
+                     <button id="bcabtn" class=" bg-[#187D6F] h-[70px] w-[180px] text-white text-[22px] rounded-[150px]  transition-all 0.2 hover:bg-[#0e554b]">Download PYQ</button>
+                </a>
+            </div>
+        </div>
+
+       
+    </div>
+  
+    <!-- courses end here -->
+     <div  class="bg-[#F4A643] min-h-[50vh] w-full flex flex-col">
+        <div id="contactme" class="w-full min-h-[200px] text-[60px] md:text-[120px] flex justify-center items-center font-[800] overflow-hidden text-white">Contact Me</div>
+        <div class=" flex justify-around items-center px-[55px] h-[200px]">
+            <a target="_blank" href="https://www.instagram.com/hymanshu.py" class="rounded-full ">
+                <img src="./images/icons8-instagram-94.png" class="transition-all 0.2">
+            </a>
+
+             <a target="_blank" href="mailto:himanshukandari14@gmail.com" class="rounded-full ">
+                <img src="./images/icons8-gmail-logo-94.png" alt="">
+            </a>
+
+             <a target="_blank" href="https://www.linkedin.com/in/himanshu-kandari-874a57230/" class="rounded-full ">
+                <img src="./images/icons8-linked-in-94.png" alt="">
+            </a>
+           
+        </div>
+       <div class="min-h-[200px]  flex flex-col justify-center items-center md:py-0 py-4">
+         <p class="capitalize text-[25px] font-[600px] select-none text-center">
+            all right reserve to himanshu kandari @2023, Developed by himanshu kandari BCA 2nd year
+        </p>
+         <a href="#nav" class="">
+                     <button id="" class=" bg-[#187D6F] h-[70px] w-[180px] text-white text-[22px] rounded-[150px]  transition-all 0.2 hover:bg-[#0e554b]">Back to top</button>
+                </a>
+       </div>
+    </div>
+   </section>
+
+   <!-- notes downlaoding page page -2 -->
+   <section id="verypage2bba" class="hidden"> 
+    <div id="downloadnavbar" class=" w-full h-[180px] flex justify-start gap-[1%] md:gap-[25%] items-center overflow-hidden">
+        <img src="./images/icons8-back-60.png" alt="" id="backbba">
+        <h1 class=" text-[60px] md:text-[100px] text-white text-center">Download PYQ'S</h1>
+    </div>
+    <!-- download section -->
+   <div id="downloadbox" class="min-h-[calc(100vh-180px)] w-[100vw] flex justify-center items-center md:px-0 px-5 overflow-hidden py-8" >
+    <!-- grid -->
+    <div id="bbagrid" class="  gap-y-6 md:gap-0 grid grid-row-[14] md:grid-rows-7 md:grid-cols-2 min-h-[690px] w-[990px] capitalize text-[26px] overflow-hidden px-3 ">
+        <div class="flex justify-center items-center hover:text-[#ff5d85]  gap-x-6"><h1>mgt accounting</h1> <img src="./images/icons8-accounting-35.png" alt=""></div>
+        <div class="flex justify-center items-center transition-all  hover:scale-[1.3]"><a download="management_accounting_PYQ" href="./BBANOTES/MANAGEMENT-ACCOUNTING 3 2010-19.pdf"><img src="./images/icons8-download-48.png" alt=""></a></div>
+        <div class="flex justify-center items-center hover:text-[#ff5d85] gap-x-6"><h1>business law</h1> <img src="./images/icons8-law-35.png" alt=""></div>
+         <div class="flex justify-center items-center transition-all  hover:scale-[1.3]"><a download="Business_law_PYQ" href="./BBANOTES/BUSINESS-LAW 3 2013-19.pdf"><img src="./images/icons8-download-48.png" alt=""></a></div>
+        <div class="flex justify-center items-center hover:text-[#ff5d85] gap-x-6"><h1>human resource</h1> <img src="./images/icons8-hr-manager-35.png" alt=""></div>
+  <div class="flex justify-center items-center transition-all  hover:scale-[1.3]"><a download="Human_resource_PYQ" href="./BBANOTES/Human resorce  3 2011-19.pdf"><img src="./images/icons8-download-48.png" alt=""></a></div>
+        <div class="flex justify-center items-center hover:text-[#ff5d85] gap-x-6"><h1>indian economy</h1> <img src="./images/icons8-economy-35.png" alt=""></div>
+  <div class="flex justify-center items-center transition-all  hover:scale-[1.3]"><a download="Indian_economy_PYQ" href="./BBANOTES/INDIAN ECONOMY 3 2010-19.pdf"><img src="./images/icons8-download-48.png" alt=""></a></div>
+        <div class="flex justify-center items-center hover:text-[#ff5d85] gap-x-6"><h1>marketing mgt</h1> <img src="./images/icons8-management-35.png" alt=""></div>
+  <div class="flex justify-center items-center transition-all  hover:scale-[1.3]"><a download="Marketing_management_PYQ" href="./BBANOTES/MARKETING-MGT 3 2010-19.pdf"><img src="./images/icons8-download-48.png" alt=""></a></div>
+   <div class="flex justify-center items-center hover:text-[#ff5d85] gap-x-6"><h1>Business ethics</h1> <img src="./images/icons8-business-group-35.png" alt=""></div>
+        <div class="flex justify-center items-center transition-all  hover:scale-[1.3]"><a download="Business_ethics_PYQ" href="./BBANOTES/Busienss-etchic 3 2018-19.pdf"><img src="./images/icons8-download-48.png" alt=""></a></div>
+        <div class="flex justify-center items-center hover:text-[#ff5d85] gap-x-6"><h1>org law </h1> <img src="./images/icons8-office-35 (1).png" alt=""></div>
+         <div class="flex justify-center items-center transition-all  hover:scale-[1.3]"><a download="organisational_law_PYQ" href="./BBANOTES/ORGANISATIONAL BRHAIVIOUR  3 2010-19.pdf"><img src="./images/icons8-download-48.png" alt=""></a></div>
+    </div>
+   </div>
+   <!-- footer -->
+    <div  class="bg-[#F4A643] min-h-[50vh] w-full flex flex-col">
+        <div id="contactme" class="w-full min-h-[200px] text-[60px] md:text-[120px] flex justify-center items-center font-[800] overflow-hidden text-white">Contact Me</div>
+        <div class=" flex justify-around items-center px-[55px] h-[200px]">
+            <a target="_blank" href="https://www.instagram.com/hymanshu.py" class="rounded-full ">
+                <img src="./images/icons8-instagram-94.png" class="transition-all 0.2">
+            </a>
+
+             <a target="_blank" href="mailto:himanshukandari14@gmail.com" class="rounded-full ">
+                <img src="./images/icons8-gmail-logo-94.png" alt="">
+            </a>
+
+             <a target="_blank" href="https://www.linkedin.com/in/himanshu-kandari-874a57230/" class="rounded-full ">
+                <img src="./images/icons8-linked-in-94.png" alt="">
+            </a>
+           
+        </div>
+       <div class="min-h-[200px]  flex flex-col justify-center items-center md:py-0 py-4">
+         <p class="capitalize text-[25px] font-[600px] select-none text-center">
+            all right reserve to himanshu kandari @2023, Developed by himanshu kandari BCA 2nd year
+        </p>
+        
+       </div>
+    </div>
+   </section>
+
+   <!-- section 3rd -->
+   
+  <div id="verypage3bca" class="h-[100vh] w-[100vw] hidden">
+    <div class=" h-[150px] w-full flex  justify-start items-center gap-[2%] md:gap-[26%]">
+        <img src="./images/icons8-back-60.png" alt="" id="backbca">
+       
+        <h1 class=" text-[30px] md:text-[100px] flex justify-start items-center font-[800]">Naughty Hora Ke??</h1>
+        </div> 
+     <div class="w-full flex justify-center items-center">
+          <video src="./images/17495a5e.mp4" autoplay loop muted></video>
+     </div>
+       
+    
+  </div>
+
+</body>
+</html>
+
+<!-- this appliaction is developed by himansnhu kandari with love -->
