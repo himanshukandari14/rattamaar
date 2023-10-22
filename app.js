@@ -83,5 +83,5 @@ bcabtn.addEventListener('click',(event)=>{
 // back logic frombba
 backbtnbca.addEventListener('click',()=>{
     verypage1.style.display='block';
-    verypage2bba.style.display='none';
+    verypage3bca.style.display='none';
 })
